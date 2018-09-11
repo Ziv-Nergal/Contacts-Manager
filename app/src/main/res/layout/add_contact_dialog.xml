@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/name_required"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/phone_number_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/phone_number_required"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/address_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/home_address"
+            android:inputType="textPostalAddress"/>
+
+        <EditText
+            android:id="@+id/website_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/website_address"
+            android:inputType="textWebEditText"/>
+
+        <Button
+            android:id="@+id/date_of_birth_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/date_of_birth"
+            android:fontFamily="@font/asenine"
+            android:textSize="20sp"
+            android:onClick="onDateOfBirthClick"/>
+
+        <TextView
+            android:id="@+id/date_of_birth_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/asenine"
+            android:textSize="25sp"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/call_time_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/time_to_call"
+            android:fontFamily="@font/asenine"
+            android:textSize="20sp"
+            android:onClick="onTimeToCallClick"/>
+
+        <TextView
+            android:id="@+id/call_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/asenine"
+            android:textSize="25sp"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/call_days_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/days_to_call"
+            android:fontFamily="@font/asenine"
+            android:textSize="20sp"
+            android:onClick="onDaysToCallClick"/>
+
+        <TextView
+            android:id="@+id/call_days_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/asenine"
+            android:textSize="25sp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/take_photo_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/take_photo_btn"
+            android:scaleType="fitCenter"
+            android:src="@drawable/take_photo_btn"
+            android:onClick="onTakePhotoClick"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/asenine"
+                android:text="@string/contact_picture"
+                android:textSize="25sp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/contact_picture_iv"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:src="@drawable/blank_profile"
+                app:civ_border_color="#2a67c9"
+                app:civ_border_width="2dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_contact_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_contact"
+            android:fontFamily="@font/asenine"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:onClick="onSaveClick"/>
+
+    </LinearLayout>
+
+</ScrollView>

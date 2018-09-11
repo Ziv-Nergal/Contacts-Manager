@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Contacts Manager</string>
+    <string name="add_contact">Add contact</string>
+    <string name="save_contact">Save</string>
+    <string name="name_required">Full Name (required)</string>
+    <string name="phone_number_required">Phone Number (required)</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="home_address">Home Address</string>
+    <string name="website_address">Website Address</string>
+    <string name="take_photo_btn">Take Photo</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="time_to_call">Time To Call</string>
+    <string name="days_to_call">Days to call</string>
+    <string name="birthday">Birthday: </string>
+    <string name="call_time">Call time: </string>
+    <string name="call_days">Days to call: </string>
+    <string name="contact_picture">Contact picture: </string>
+    <string name="photo">Photo</string>
+    <string name="website">Website</string>
+    <string name="back_btn">back</string>
+    <string name="delete_all_contacts">delete all contacts</string>
+</resources>
